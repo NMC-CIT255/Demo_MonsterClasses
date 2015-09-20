@@ -2,8 +2,15 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="Demo_MonsterClasses.SeaMonster">
     <Position X="9.25" Y="1" Width="2.25" />
+    <NestedTypes>
+      <Enum Name="Demo_MonsterClasses.SeaMonster.DispositionType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SeaMonster.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAIAAAgAAQBAQAQAAAAAQAgAAAAAAAAQCAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAgAAQBAQAQAAAAAQAkAAAAAAAAQCAAAAAAAA=</HashCode>
       <FileName>SeaMonster.cs</FileName>
     </TypeIdentifier>
   </Class>

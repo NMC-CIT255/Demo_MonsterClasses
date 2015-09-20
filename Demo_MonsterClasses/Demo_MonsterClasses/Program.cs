@@ -10,6 +10,28 @@ namespace Demo_MonsterClasses
     {
         static void Main(string[] args)
         {
+            //
+            // instantiate (create) a new sea monster
+            //
+            SeaMonster seymore = new SeaMonster();
+
+            //
+            // set the sea monsters atttibutes
+            //
+            seymore.Name = "Seymore the Sea Monster";
+            seymore.Sea = "The Baltic Sea";
+            seymore.Type = "Big, Slimy Fish";
+            seymore.Gills = true;
+
+
+            //
+            // display the monsters' attributes
+            //
+            seymore.DisplaySeaMonsterInfo();
+
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
 
         }
     }

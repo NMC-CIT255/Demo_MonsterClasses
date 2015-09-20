@@ -8,6 +8,20 @@ namespace Demo_MonsterClasses
 {
     class SeaMonster
     {
+
+        #region ENUMERABLES
+
+        public enum DispositionType
+        {
+            Happy,
+            Sad,
+            Nice,
+            Mean,
+            Crazy
+        }
+
+        #endregion
+
         #region FIELDS
 
         private string _name;
@@ -15,12 +29,9 @@ namespace Demo_MonsterClasses
         private string _sea;
 
         private bool _gills;
-        private int _numberOfLegs;      
+        private int _numberOfLegs;
 
-        
-
-
-        
+        private DispositionType _disposition;
 
         #endregion
 
@@ -37,7 +48,7 @@ namespace Demo_MonsterClasses
             get { return _type; }
             set { _type = value; }
         }
-        
+
         public string Sea
         {
             get { return _sea; }
@@ -49,17 +60,27 @@ namespace Demo_MonsterClasses
             get { return _gills; }
             set { _gills = value; }
         }
-        
+
         public int NumbeOfLegs
         {
             get { return _numberOfLegs; }
             set { _numberOfLegs = value; }
         }
 
+        public DispositionType Disposition
+        {
+            get { return _disposition; }
+            set { _disposition = value; }
+        }
 
         #endregion
 
         #region CONSTRUCTORS
+
+        public SeaMonster()
+        {
+
+        }
 
 
 
@@ -67,7 +88,20 @@ namespace Demo_MonsterClasses
 
         #region METHODS
 
-
+        /// <summary>
+        /// display all of the monster's attributes
+        /// </summary>
+        public void DisplaySeaMonsterInfo()
+        {
+            Console.WriteLine("Greetings - My Monster's Attributes");
+            Console.WriteLine();
+            Console.WriteLine("Name: {0}", _name);
+            Console.WriteLine("Type: {0}", _type);
+            Console.WriteLine("Sea: {0}", _sea);
+            Console.WriteLine("Has Gills: {0}", _gills);
+            Console.WriteLine("Number or Legs: {0}", _numberOfLegs);
+            Console.WriteLine("Disposition: {0}", Disposition);
+        }
 
         #endregion
     }
