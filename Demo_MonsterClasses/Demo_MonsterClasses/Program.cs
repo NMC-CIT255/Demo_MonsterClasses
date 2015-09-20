@@ -10,6 +10,7 @@ namespace Demo_MonsterClasses
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
