@@ -33,6 +33,14 @@ namespace Demo_MonsterClasses
 
         private DispositionType _disposition;
 
+        private string[] _friends = new string[5];
+
+        public string[] Friends
+        {
+            get { return _friends; }
+            set { _friends = value; }
+        }
+
         #endregion
 
         #region PROPERTIES
@@ -77,12 +85,24 @@ namespace Demo_MonsterClasses
 
         #region CONSTRUCTORS
 
+        /// <summary>
+        /// constructor
+        /// </summary>
         public SeaMonster()
         {
 
         }
 
+        public SeaMonster(string name)
+        {
+            _name = name;
+        }
 
+        public SeaMonster(string name, DispositionType disposition)
+        {
+            _name = name;
+            _disposition = disposition;
+        }
 
         #endregion
 
@@ -95,12 +115,23 @@ namespace Demo_MonsterClasses
         {
             Console.WriteLine("Greetings - My Monster's Attributes");
             Console.WriteLine();
+
             Console.WriteLine("Name: {0}", _name);
             Console.WriteLine("Type: {0}", _type);
             Console.WriteLine("Sea: {0}", _sea);
             Console.WriteLine("Has Gills: {0}", _gills);
             Console.WriteLine("Number or Legs: {0}", _numberOfLegs);
             Console.WriteLine("Disposition: {0}", Disposition);
+
+            Console.WriteLine();
+            Console.WriteLine("Friends");
+            foreach (var friend in _friends)
+            {
+                if (friend != null)
+                {
+                Console.WriteLine("Friend: {0}", friend);                    
+                }
+            }
         }
 
         #endregion
