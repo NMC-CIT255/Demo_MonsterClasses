@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
-  <Class Name="Demo_MonsterClasses.SeaMonster">
+  <Class Name="Demo_MonsterClasses.SpaceMonster">
     <Position X="9.25" Y="1" Width="2.25" />
     <NestedTypes>
-      <Enum Name="Demo_MonsterClasses.SeaMonster.DispositionType" Collapsed="true">
+      <Enum Name="Demo_MonsterClasses.SpaceMonster.DispositionType" Collapsed="true">
         <TypeIdentifier>
-          <NewMemberFileName>SeaMonster.cs</NewMemberFileName>
+          <NewMemberFileName>SpaceMonster.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAIAAAgAAQBAQAQAAAAAQAkAAAAAAAAQCAAAAAAAA=</HashCode>
-      <FileName>SeaMonster.cs</FileName>
+      <HashCode>AQAAIAAABAAAEIQAQABAAEQAkAAAAAAAAQIAAAAAAAA=</HashCode>
+      <FileName>SpaceMonster.cs</FileName>
+      <NewMemberFileName>SeaMonster.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

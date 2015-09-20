@@ -26,8 +26,21 @@ namespace Demo_MonsterClasses
                 Name = "Suzy the Sea Monster",
                 Type = "Big, Slimy Fish",
                 Sea = "The Baltic Sea",
-                Gills = true,
+                HasGills = true,
                 NumbeOfLegs = 8
+            };
+
+            //
+            // instantiate (create) a space monster and use an
+            // object intializer to set the attributes
+            //
+            SpaceMonster sid = new SpaceMonster
+            {
+                Name = "Sid the Space Monster",
+                Type = "Billowng Floater",
+                Planet = "The Gasous Giant Emcore",
+                HasDeathRay = false,
+                NumbeOfWings = 2
             };
 
             //
@@ -36,6 +49,8 @@ namespace Demo_MonsterClasses
             seymore.DisplaySeaMonsterInfo();
             Console.WriteLine();
             suzy.DisplaySeaMonsterInfo();
+            Console.WriteLine();
+            sid.DisplaySpaceMonsterInfo();
 
             //
             // pause the console window and wait for a keystroke
@@ -46,16 +61,19 @@ namespace Demo_MonsterClasses
 
         }
 
+        /// <summary>
+        /// set the monster attributes using methods
+        /// </summary>
+        /// <param name="monster"></param>
         private static void SetSeaMonsterAttributes(SeaMonster monster)
         {
-
             //
             // set the sea monsters atttibutes
             //
             monster.Name = "Seymore the Sea Monster";
             monster.Type = "Big, Slimy Fish";
             monster.Sea = "The Baltic Sea";
-            monster.Gills = true;
+            monster.HasGills = true;
             monster.NumbeOfLegs = 7;
             monster.Friends[0] = "Suzy";
         }

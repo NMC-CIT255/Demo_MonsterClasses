@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Demo_MonsterClasses
 {
-    class SeaMonster
+    class SpaceMonster
     {
 
         #region ENUMERABLES
@@ -26,10 +26,10 @@ namespace Demo_MonsterClasses
 
         private string _name;
         private string _type;
-        private string _sea;
+        private string _planet;
 
-        private bool _hasGills;
-        private int _numberOfLegs;
+        private bool _hasDeathRay;
+        private int _numberOfWings;
 
         private DispositionType _disposition;
 
@@ -57,22 +57,22 @@ namespace Demo_MonsterClasses
             set { _type = value; }
         }
 
-        public string Sea
+        public string Planet
         {
-            get { return _sea; }
-            set { _sea = value; }
+            get { return _planet; }
+            set { _planet = value; }
         }
 
-        public bool HasGills
+        public bool HasDeathRay
         {
-            get { return _hasGills; }
-            set { _hasGills = value; }
+            get { return _hasDeathRay; }
+            set { _hasDeathRay = value; }
         }
 
-        public int NumbeOfLegs
+        public int NumbeOfWings
         {
-            get { return _numberOfLegs; }
-            set { _numberOfLegs = value; }
+            get { return _numberOfWings; }
+            set { _numberOfWings = value; }
         }
 
         public DispositionType Disposition
@@ -88,17 +88,17 @@ namespace Demo_MonsterClasses
         /// <summary>
         /// constructor
         /// </summary>
-        public SeaMonster()
+        public SpaceMonster()
         {
 
         }
 
-        public SeaMonster(string name)
+        public SpaceMonster(string name)
         {
             _name = name;
         }
 
-        public SeaMonster(string name, DispositionType disposition)
+        public SpaceMonster(string name, DispositionType disposition)
         {
             _name = name;
             _disposition = disposition;
@@ -111,16 +111,16 @@ namespace Demo_MonsterClasses
         /// <summary>
         /// display all of the monster's attributes
         /// </summary>
-        public void DisplaySeaMonsterInfo()
+        public void DisplaySpaceMonsterInfo()
         {
             Console.WriteLine("Greetings - My Monster's Attributes");
             Console.WriteLine();
 
             Console.WriteLine("Name: {0}", _name);
             Console.WriteLine("Type: {0}", _type);
-            Console.WriteLine("Sea: {0}", _sea);
-            Console.WriteLine("Has Gills: {0}", _hasGills);
-            Console.WriteLine("Number or Legs: {0}", _numberOfLegs);
+            Console.WriteLine("Planet: {0}", _planet);
+            Console.WriteLine("Has Death Ray: {0}", _hasDeathRay);
+            Console.WriteLine("Number or Wings: {0}", _numberOfWings);
             Console.WriteLine("Disposition: {0}", Disposition);
 
             Console.WriteLine();
