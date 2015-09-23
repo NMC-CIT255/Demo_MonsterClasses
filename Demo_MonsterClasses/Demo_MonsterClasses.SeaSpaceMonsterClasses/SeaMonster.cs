@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Demo_MonsterClasses
 {
-    public abstract class Monster
+    class SeaMonster
     {
+
         #region ENUMERABLES
 
         public enum DispositionType
@@ -27,15 +28,12 @@ namespace Demo_MonsterClasses
         private string _type;
         private string _sea;
 
+        private bool _hasGills;
+        private int _numberOfLegs;
+
         private DispositionType _disposition;
 
         private string[] _friends = new string[5];
-
-        public string[] Friends
-        {
-            get { return _friends; }
-            set { _friends = value; }
-        }
 
         #endregion
 
@@ -59,27 +57,45 @@ namespace Demo_MonsterClasses
             set { _sea = value; }
         }
 
+        public bool HasGills
+        {
+            get { return _hasGills; }
+            set { _hasGills = value; }
+        }
+
+        public int NumbeOfLegs
+        {
+            get { return _numberOfLegs; }
+            set { _numberOfLegs = value; }
+        }
+
         public DispositionType Disposition
         {
             get { return _disposition; }
             set { _disposition = value; }
         }
 
+        public string[] Friends
+        {
+            get { return _friends; }
+            set { _friends = value; }
+        }
+
         #endregion
 
         #region CONSTRUCTORS
 
-        public Monster()
+        public SeaMonster()
         {
 
         }
 
-        public Monster(string name)
+        public SeaMonster(string name)
         {
             _name = name;
         }
 
-        public Monster(string name, DispositionType disposition)
+        public SeaMonster(string name, DispositionType disposition)
         {
             _name = name;
             _disposition = disposition;
@@ -92,11 +108,27 @@ namespace Demo_MonsterClasses
         /// <summary>
         /// display all of the monster's attributes
         /// </summary>
-        public abstract void DisplayMonsterInfo();
-
-        public virtual void Greeting()
+        public void DisplaySeaMonsterInfo()
         {
-            Console.WriteLine("Hello friends, my name is {0}", _name);
+            Console.WriteLine("Greetings - My Monster's Attributes");
+            Console.WriteLine();
+
+            Console.WriteLine("Name: {0}", _name);
+            Console.WriteLine("Type: {0}", _type);
+            Console.WriteLine("Sea: {0}", _sea);
+            Console.WriteLine("Has Gills: {0}", _hasGills);
+            Console.WriteLine("Number or Legs: {0}", _numberOfLegs);
+            Console.WriteLine("Disposition: {0}", Disposition);
+
+            Console.WriteLine();
+            Console.WriteLine("Friends");
+            foreach (var friend in _friends)
+            {
+                if (friend != null)
+                {
+                    Console.WriteLine("Friend: {0}", friend);
+                }
+            }
         }
 
         #endregion

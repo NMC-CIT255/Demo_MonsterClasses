@@ -62,7 +62,7 @@ namespace Demo_MonsterClasses
         }
 
         /// <summary>
-        /// set the monster attributes using methods
+        /// set the monster attributes using a method
         /// </summary>
         /// <param name="monster"></param>
         private static void SetSeaMonsterAttributes(SeaMonster monster)

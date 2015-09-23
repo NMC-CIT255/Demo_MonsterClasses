@@ -35,12 +35,6 @@ namespace Demo_MonsterClasses
 
         private string[] _friends = new string[5];
 
-        public string[] Friends
-        {
-            get { return _friends; }
-            set { _friends = value; }
-        }
-
         #endregion
 
         #region PROPERTIES
@@ -79,6 +73,12 @@ namespace Demo_MonsterClasses
         {
             get { return _disposition; }
             set { _disposition = value; }
+        }
+
+        public string[] Friends
+        {
+            get { return _friends; }
+            set { _friends = value; }
         }
 
         #endregion
