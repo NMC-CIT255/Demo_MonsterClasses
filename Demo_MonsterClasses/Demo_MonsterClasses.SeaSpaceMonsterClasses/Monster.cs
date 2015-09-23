@@ -69,9 +69,6 @@ namespace Demo_MonsterClasses
 
         #region CONSTRUCTORS
 
-        /// <summary>
-        /// constructor
-        /// </summary>
         public Monster()
         {
 
